@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Diego Top Spots</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Write your markup here -->
-
-    <!-- Don't forget to add your <script> tag here -->
+    <h1>San Diego Top Spots</h1>
+    <div id="map" style="height: 500px; width: 100%;"></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Link</th>
+                <th>Distance</th>
+            </tr>
+        </thead>
+        <tbody id="top-spots-table-body">
+            <!-- Rows will be populated by JavaScript -->
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaehoEuJ5C_694JeAwa5d-B2CfmApdW18"></script>
+    <script src="main.js"></script>
 </body>
 </html>
